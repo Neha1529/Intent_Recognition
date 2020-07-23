@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link rel="icon" type="image/png" href="/static/favicon.ico">
+  
+</head>
+
+<body>
+	<div>
+ 
+	<h1>Intent Recognition</h1>
+	<br>
+	<br>
+	
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="text" placeholder="Enter text here" />
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+				{{ prediction_text }}
+
+ 
+	</div>
+
+</body>
+</html>
