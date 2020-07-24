@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 #import necessary dependencies and settings
 
 import pandas as pd
@@ -32,14 +26,12 @@ from sklearn import metrics
 from joblib import dump, load
 
 
-# In[2]:
-
 
 #Read from file into dataframe
 
-train = pd.read_csv("downloads/Data/train.csv")
-test = pd.read_csv("downloads/Data/test.csv")
-valid = pd.read_csv("downloads/Data/valid.csv")
+train = pd.read_csv("train.csv")
+test = pd.read_csv("test.csv")
+valid = pd.read_csv("valid.csv")
 
 train = train.append(valid).reset_index(drop=True)
 
