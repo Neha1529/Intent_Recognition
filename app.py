@@ -33,7 +33,7 @@ def predict():
         return render_template('index.html', prediction_text='Intent class is  {}'.format(output))
 
 def loadModel():
-    classifier = load(r"home/site/wwwroot/prediction/model.joblib")
+    classifier = load(r"/home/site/wwwroot/prediction/model.joblib")
     return classifier
 
 model = loadModel()
