@@ -1,17 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 from joblib import load
 
 
-# In[2]:
-
-
 def load_count_vectorizer():
-    count_vect = load(r'C:\Users\Neha\IntentRecognition\prediction\count_vect.joblib')
+    count_vect = load(r'home/site/wwwroot/prediction/count_vect.joblib')
     return count_vect
 
 
@@ -19,7 +11,7 @@ def load_count_vectorizer():
 
 
 def load_tfidf_transformer():
-    tfidf_transformer = load(r'C:\Users\Neha\IntentRecognition\prediction\tfidf_transformer.joblib')
+    tfidf_transformer = load(r'home/site/wwwroot/prediction/tfidf_transformer.joblib')
     return tfidf_transformer
 
 
