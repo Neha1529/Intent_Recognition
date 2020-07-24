@@ -36,9 +36,11 @@ def loadModel():
     classifier = load(r"home/site/wwwroot/prediction/model.joblib")
     return classifier
 
+model = loadModel()
+
 if __name__ == '__main__':
-    model = loadModel()
-    print("model loading")
+    
+    
     app.run(host = '0.0.0.0',port=5000,debug =True)
     
 
