@@ -3,7 +3,7 @@ from joblib import load
 
 
 def load_count_vectorizer():
-    count_vect = load(r'/home/wwwroot/prediction/count_vect.joblib')
+    count_vect = load(r'/home/site/wwwroot/prediction/count_vect.joblib')
     return count_vect
 
 
