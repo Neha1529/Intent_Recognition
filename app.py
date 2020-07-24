@@ -4,7 +4,7 @@
 # In[ ]:
 
 
-from flask import Flask, request,render_template,redirect,url_for
+from flask import Flask, request,render_template
 from joblib import load
 
 from prediction.transformation import transform
@@ -33,7 +33,7 @@ def predict():
         return render_template('index.html', prediction_text='Intent class is  {}'.format(output))
 
 def loadModel():
-    classifier = load(r"C:\Users\Neha\IntentRecognition\prediction\model.joblib")
+    classifier = load(r"home/site/wwwroot/prediction/model.joblib")
     return classifier
 
 if __name__ == '__main__':
