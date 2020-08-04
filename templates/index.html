@@ -4,19 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <title>ML API</title>
-  
+  <style>
+  h1 {text-align: center;}
+
+  form {
+
+    padding: 100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+</style>
   
 </head>
 
 <body>
-	<div>
+	
  
 	<h1>Intent Recognition</h1>
-	<br>
-	<br>
+	
 	
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
+    <form action="{{ url_for('predict')}}"method="POST">
     	<input type="text" name="text" placeholder="Enter text here" />
         
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
@@ -24,10 +33,10 @@
 
    <br>
    <br>
-				{{ prediction_text }}
+  <center>{{ prediction_text }}</center>
 
  
-	</div>
+	
 
 </body>
 </html>
