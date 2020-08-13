@@ -1,3 +1,6 @@
+## Project Title
+Intent Recognition
+
 ## About 
 It's a classifier modeled for the task of predicting which of intent corresponds best to a user requests.It uses Python and Flask. Intent Detection is one of the text classification task which find its application in any chatbot platform,in identification of an email as personal or business,computer-vision etc.
 ## Demo-Preview
@@ -21,9 +24,9 @@ Following preprocessing was performed on the text data:
 - Lemmatization
 ## Modeling
 ### Machine Learning Method
-- Random Forests
+- [Random Forests](https://github.com/Neha1529/Intent_Recognition/blob/master/model.py)
 ### Deep Learning Method
-- Bi-Directional LSTM [here](https://github.com/Neha1529/IntentRecognition/blob/master/Intent_recognition_using_LSTM.ipynb)
+- [Bi-Directional LSTM](https://github.com/Neha1529/IntentRecognition/blob/master/Intent_recognition_using_LSTM.ipynb)
 ## How to Run 
 1. Install Docker
 2. Pull docker image from the [registry](https://hub.docker.com/repository/docker/neha2915/flask-app) by the command
