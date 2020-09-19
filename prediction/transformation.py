@@ -1,5 +1,6 @@
 
 from joblib import load
+from preprocessing.preprocessing import preprocessing
 
 
 def load_count_vectorizer():
@@ -21,9 +22,8 @@ def load_tfidf_transformer():
 def transform(data):
     count_vect = load_count_vectorizer()
     tfidf_transformer = load_tfidf_transformer()
-    print([data])
-    train_cv = count_vect.transform([data])
-    print(train_cv)
+    preprocessed_data = preprocessing([data],remove_stopwords=True, lemmatization=True, remove_accented=True)
+    train_cv = count_vect.transform(preprocessed_data)
     X_train_idf = tfidf_transformer.transform(train_cv)
     
     return X_train_idf
