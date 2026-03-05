@@ -2,7 +2,7 @@
 Intent Recognition
 
 ## About 
-It's a classifier modeled for the task of predicting which of intent corresponds best to a user requests.It uses Python and Flask. Intent Detection is one of the text classification task which find its application in any chatbot platform,in identification of an email as personal or business,computer-vision etc.
+It's a classifier modeled for the task of predicting the intent of a user's requests.The UI is a simple HTML front end that talks to a python Flask backend exposing the prediction API.Intent Detection is one of the text classification task which find its application in any chatbot platform,in identification of an email as personal or business,computer-vision etc.
 ## Demo-Preview
 ![](g.gif)
 ## Data
